@@ -18,7 +18,7 @@ language_translator.set_service_url(url)
 
 
 def english_to_french(txt):
-    """En to Fr"""
+    """English to French"""
     if not txt:
         return ""
     translation = language_translator.translate(text=txt, model_id='en-fr').get_result()
@@ -27,7 +27,7 @@ def english_to_french(txt):
 
 
 def french_to_english(txt):
-    """Fr to En"""
+    """French to English"""
     if not txt:
         return ""
     translation = language_translator.translate(text=txt, model_id='fr-en').get_result()
